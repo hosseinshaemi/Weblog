@@ -1,0 +1,22 @@
+<form
+  action="/users/forget-password"
+  method="POST"
+  class="form-signin"
+  id="loginForm"
+>
+  <h1 class="h3 mb-3 font-weight-normal">فراموشی رمز عبور</h1>
+  <%- include('./includes/loginMessages.ejs') %>
+  <label for="inputEmail" class="sr-only">آدرس ایمیل</label>
+  <input
+    type="email"
+    name="email"
+    id="inputEmail"
+    class="form-control mb-2"
+    placeholder="آدرس ایمیل"
+    required
+    autofocus
+  />
+  <button type="submit" class="btn btn-lg btn-primary btn-block">
+    ریست پسورد
+  </button>
+</form>
